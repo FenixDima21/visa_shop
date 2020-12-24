@@ -1,0 +1,53 @@
+/*добавляем скролл всему html*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+.arrow__up {
+	position: fixed;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #C4C4C4;
+	transition: 0.5s;
+	opacity: 0;
+	pointer-events: none
+}
+
+.arrow__up.active {
+	bottom: 50px;
+	opacity: .8;
+	pointer-events: auto;
+	z-index: 10;
+}
+
+.arrow__up:hover {
+	background-color: #8AC44B;
+}
+
+.arrow__up::before,
+.arrow__up::after {
+	content: "";
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.arrow__up::before {
+	width: 5px;
+	height: 25px;
+	background-color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.arrow__up::after {
+	width: 18px;
+	height: 18px;
+	border-top: 5px solid #fff;
+	border-left: 5px solid #fff;
+	transform: translate(-50%, -60%) rotate(45deg);
+}
