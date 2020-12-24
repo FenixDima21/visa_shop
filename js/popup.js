@@ -83,9 +83,9 @@ function bodyUnLock() {
                 el.style.paddingRight = '0px';
             }
         }
-        if (headerActive.classList.contains('active')) {} else {
+        // if (headerActive.classList.contains('active')) {} else {
             body.classList.remove('lock');
-        }
+        // }
         body.style.paddingRight = '0px';
     }, timeout);
 
