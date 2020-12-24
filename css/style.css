@@ -961,6 +961,7 @@ Select dropdown js
 
 .documents__main-items li:not(:last-child)::after {
 	border: 1px solid #8AC44B;
+	background-color: #8AC44B;
 }
 
 .documents__additional-items li:before {
@@ -969,6 +970,7 @@ Select dropdown js
 
 .documents__additional-items li:not(:last-child)::after {
 	border: 1px solid #F57C1F;
+	background-color: #F57C1F;
 }
 
 .documents__additional-title {
@@ -1984,7 +1986,7 @@ input.discount__form-input::placeholder {
 		padding-top: 0;
 		transition: .4s;
 		overflow: auto;
-		z-index: 2;
+		z-index: -1;
 	}
 
 	.header__wrapper.active {
