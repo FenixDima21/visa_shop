@@ -286,6 +286,7 @@ input.popup__form-input::placeholder,
     align-items: center;
     margin-bottom: 22px;
     z-index: 2;
+     position: relative;
 }
 
 .visa__countries-search {
@@ -301,11 +302,14 @@ input.popup__form-input::placeholder,
 
 .visa__search-btn {
     display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
     width: 34px;
     height: 34px;
     border-radius: 4px;
     background: #FFF;
-    margin-right: 8px;
 }
 
 
