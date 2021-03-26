@@ -1,204 +1,200 @@
 body.lock {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .popup {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transition: all 0.8s ease 0s;
-    z-index: 20;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.8s ease 0s;
+	z-index: 20;
 }
 
 .popup.open {
-    opacity: 1;
-    visibility: visible;
-    /*при target делаем попап видимым*/
+	opacity: 1;
+	visibility: visible;
+	/*при target делаем попап видимым*/
 }
 
 .popup.open .popup__content {
-    transform: translate(0px, 0%);
-    opacity: 1;
+	transform: translate(0px, 0%);
+	opacity: 1;
 }
 
 .popup__body {
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .popup__content {
-    background-color: #fff;
-    color: #000;
-    max-width: 386px;
-    position: relative;
-    border-radius: 8px;
-    /* анимация сверху */
-    opacity: 0;
-    transform: translate(0px, -100%);
-    transition: all 0.8s ease 0s;
+	background-color: #fff;
+	color: #000;
+	max-width: 386px;
+	position: relative;
+	border-radius: 8px;
+	/* анимация сверху */
+	opacity: 0;
+	transform: translate(0px, -100%);
+	transition: all 0.8s ease 0s;
 }
 
 .popup__column {
-    padding: 30px 62px;
+	padding: 30px 62px;
 }
 
-
 .popup__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 120%;
-    text-align: center;
-    color: #443E3E;
-    margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 120%;
+	text-align: center;
+	color: #443E3E;
+	margin-bottom: 30px;
 }
 
 .popup__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    ;
-    max-width: 592px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	;
+	max-width: 592px;
 }
 
 .popup__form-input {
-    padding: 11.5px 15px;
-    margin-bottom: 20px;
-    display: flex;
-    width: 258px;
-    border: 1px solid #CCC;
-    border-radius: 4px;
-    cursor: pointer;
-    height: 46px;
+	padding: 11.5px 15px;
+	margin-bottom: 20px;
+	display: flex;
+	width: 258px;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	cursor: pointer;
+	height: 46px;
 }
 
-input.popup__form-input::placeholder,
-.popup__form-textarea::placeholder {
-    font-size: 15px;
-    line-height: 120%;
-    color: #999;
+input.popup__form-input::placeholder, .popup__form-textarea::placeholder {
+	font-size: 15px;
+	line-height: 120%;
+	color: #999;
 }
 
 .popup__form-input:hover {
-    border: 2px solid #CCC;
-    padding: 10.5px 14px;
-    color: #443E3E;
+	border: 2px solid #CCC;
+	padding: 10.5px 14px;
+	color: #443E3E;
 }
 
-.popup__form-input:active,
-.popup__form-input:focus {
-    border: 2px solid #8AC44B;
-    color: #443E3E;
-    padding: 9.5px 14px;
+.popup__form-input:active, .popup__form-input:focus {
+	border: 2px solid #8AC44B;
+	color: #443E3E;
+	padding: 9.5px 14px;
 }
 
 .popup__form-textarea {
-    width: 258px;
-    height: 163px;
-    border: 1px solid #CCC;
-    color: #443E3E;
-    border-radius: 4px;
-    padding: 11px 15px;
+	width: 258px;
+	height: 163px;
+	border: 1px solid #CCC;
+	color: #443E3E;
+	border-radius: 4px;
+	padding: 11px 15px;
 }
 
 .popup__form-textarea::placeholder {}
 
 .popup__form-textarea:hover {
-    border: 2px solid #CCC;
-    padding: 10px 14px;
+	border: 2px solid #CCC;
+	padding: 10px 14px;
 }
 
-
-.popup__form-textarea:active,
-.popup__form-textarea:focus {
-    border: 2px solid #8AC44B;
-    padding: 10px 14px;
+.popup__form-textarea:active, .popup__form-textarea:focus {
+	border: 2px solid #8AC44B;
+	padding: 10px 14px;
 }
 
 .popup__form-link {
-    display: flex;
-    margin: 10px 0;
+	display: flex;
+	margin: 10px 0;
 }
 
-.popup__form-link a {
-    text-align: center;
-    padding: 10px;
-    width: 258px;
+.popup__form-link input {
+	text-align: center;
+	background-color: #fff !important;
+	padding: 10px;
+	width: 258px;
 }
 
 .popup__form-consent {
-    margin: 10px 25px 0 0;
-    position: relative;
-    max-width: 232px;
+	margin: 10px 25px 0 0;
+	position: relative;
+	max-width: 232px;
 }
 
 .popup__input {
-    position: absolute;
-    -webkit-appearance: none;
-    appearance: none;
+	position: absolute;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 .popup__input:checked+.popup__label::after {
-    opacity: 1;
+	opacity: 1;
 }
 
 .popup__label {
-    display: flex;
-    position: relative;
-    font-size: 13px;
-    line-height: 120%;
-    color: #999999;
-    padding-left: 28px;
-    cursor: pointer;
+	display: flex;
+	position: relative;
+	font-size: 13px;
+	line-height: 120%;
+	color: #999999;
+	padding-left: 28px;
+	cursor: pointer;
 }
 
 .popup__label::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 0;
-    left: 0;
-    background-color: #eee;
-    border-radius: 1px;
-    z-index: 1;
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 0;
+	left: 0;
+	background-color: #eee;
+	border-radius: 1px;
+	z-index: 1;
 }
 
 .popup__label::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    left: 3px;
-    z-index: 2;
-    width: 18px;
-    height: 15px;
-    background-image: url(../images/discount/checkmark.png);
-    background-repeat: no-repeat;
-    opacity: 0;
+	content: "";
+	display: block;
+	position: absolute;
+	top: -1px;
+	left: 3px;
+	z-index: 2;
+	width: 18px;
+	height: 15px;
+	background-image: url(../images/discount/checkmark.png);
+	background-repeat: no-repeat;
+	opacity: 0;
 }
 
-
 /*кнопка закрытия*/
+
 .popup__close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 24px;
-    height: 24px;
-    text-decoration: none;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+	text-decoration: none;
 }
 
 .popup__close img {
-    width: 100%;
+	width: 100%;
 }
 
 /*visa__countres-popup*/
@@ -206,377 +202,346 @@ input.popup__form-input::placeholder,
 .visa__countries__popup {}
 
 .visa__countries__content {
-    max-width: 1030px;
-    margin: 25px;
+	max-width: 1030px;
+	margin: 25px;
 }
 
-
 .visa__countries__column {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
 }
 
 .visa__popup__title {
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 120%;
-    color: #8AC44B;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 120%;
+	color: #8AC44B;
 }
 
 .visa__popup__title span {
-    color: #F57C1F;
+	color: #F57C1F;
 }
 
-.visa__countries-list1,
-.visa__countries-list2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
+.visa__countries-list1, .visa__countries-list2 {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
 }
 
 .visa__countries-list1 span {
-    display: inline;
+	display: inline;
 }
 
 .visa__countries-list1 {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .visa__countries-item {
-    display: flex;
-    width: 130px;
-    margin: 10px 15px;
+	display: flex;
+	width: 130px;
+	margin: 10px 15px;
 }
 
 .visa__countries-item a {
-    font-size: 15px;
-    line-height: 20px;
-    color: #000;
-    position: relative;
-    cursor: pointer;
-    padding-left: 38px;
-    width: 130px;
+	font-size: 15px;
+	line-height: 20px;
+	color: #000;
+	position: relative;
+	cursor: pointer;
+	padding-left: 38px;
+	width: 130px;
 }
 
-.visa__countries-item:hover,
-.visa__countries-item:active {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.visa__countries-item:hover, .visa__countries-item:active {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .visa__countries-item a:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 28px;
-    height: 20px;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 28px;
+	height: 20px;
 }
 
 .visa__countries-form {
-    display: none;
-    justify-content: space-between;
-    width: 232px;
-    height: 40px;
-    background: #FFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 4px;
-    align-items: center;
-    margin-bottom: 22px;
-    z-index: 2;
-     position: relative;
+	display: none;
+	justify-content: space-between;
+	width: 232px;
+	height: 40px;
+	background: #FFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	align-items: center;
+	margin-bottom: 22px;
+	z-index: 2;
+	position: relative;
 }
 
 .visa__countries-search {
-    padding-left: 14px;
-
+	padding-left: 14px;
 }
 
 .visa__countries-search::placeholder {
-    font-size: 15px;
-    line-height: 120%;
-    color: #999;
+	font-size: 15px;
+	line-height: 120%;
+	color: #999;
 }
 
 .visa__search-btn {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 8px;
-    width: 34px;
-    height: 34px;
-    border-radius: 4px;
-    background: #FFF;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 8px;
+	width: 34px;
+	height: 34px;
+	border-radius: 4px;
+	background: #FFF;
 }
 
-
 .visa__countries-item1 a:before {
-    background-image: url(../images/visa_countries/flag_icon/1.png);
+	background-image: url(../images/visa_countries/flag_icon/1.png);
 }
 
 .visa__countries-item2 a:before {
-    background-image: url(../images/visa_countries/flag_icon/2.png);
+	background-image: url(../images/visa_countries/flag_icon/2.png);
 }
 
 .visa__countries-item3 a:before {
-    background-image: url(../images/visa_countries/flag_icon/3.png);
+	background-image: url(../images/visa_countries/flag_icon/3.png);
 }
 
 .visa__countries-item4 a:before {
-    background-image: url(../images/visa_countries/flag_icon/4.png);
+	background-image: url(../images/visa_countries/flag_icon/4.png);
 }
 
 .visa__countries-item5 a:before {
-    background-image: url(../images/visa_countries/flag_icon/5.png);
+	background-image: url(../images/visa_countries/flag_icon/5.png);
 }
 
 .visa__countries-item6 a:before {
-    background-image: url(../images/visa_countries/flag_icon/6.png);
+	background-image: url(../images/visa_countries/flag_icon/6.png);
 }
 
 .visa__countries-item7 a:before {
-    background-image: url(../images/visa_countries/flag_icon/7.png);
+	background-image: url(../images/visa_countries/flag_icon/7.png);
 }
 
 .visa__countries-item8 a:before {
-    background-image: url(../images/visa_countries/flag_icon/8.png);
+	background-image: url(../images/visa_countries/flag_icon/8.png);
 }
 
 .visa__countries-item9 a:before {
-    background-image: url(../images/visa_countries/flag_icon/9.png);
+	background-image: url(../images/visa_countries/flag_icon/9.png);
 }
 
 .visa__countries-item10 a:before {
-    background-image: url(../images/visa_countries/flag_icon/10.png);
+	background-image: url(../images/visa_countries/flag_icon/10.png);
 }
 
 .visa__countries-item11 a:before {
-    background-image: url(../images/visa_countries/flag_icon/11.png);
+	background-image: url(../images/visa_countries/flag_icon/11.png);
 }
 
 .visa__countries-item12 a:before {
-    background-image: url(../images/visa_countries/flag_icon/12.png);
+	background-image: url(../images/visa_countries/flag_icon/12.png);
 }
 
 .visa__countries-item13 a:before {
-    background-image: url(../images/visa_countries/flag_icon/13.png);
+	background-image: url(../images/visa_countries/flag_icon/13.png);
 }
 
 .visa__countries-item14 a:before {
-    background-image: url(../images/visa_countries/flag_icon/14.png);
+	background-image: url(../images/visa_countries/flag_icon/14.png);
 }
 
 .visa__countries-item15 a:before {
-    background-image: url(../images/visa_countries/flag_icon/15.png);
+	background-image: url(../images/visa_countries/flag_icon/15.png);
 }
 
 .visa__countries-item16 a:before {
-    background-image: url(../images/visa_countries/flag_icon/16.png);
+	background-image: url(../images/visa_countries/flag_icon/16.png);
 }
 
 .visa__countries-item17 a:before {
-    background-image: url(../images/visa_countries/flag_icon/17.png);
+	background-image: url(../images/visa_countries/flag_icon/17.png);
 }
 
 .visa__countries-item18 a:before {
-    background-image: url(../images/visa_countries/flag_icon/18.png);
+	background-image: url(../images/visa_countries/flag_icon/18.png);
 }
 
 .visa__countries-item19 a:before {
-    background-image: url(../images/visa_countries/flag_icon/19.png);
+	background-image: url(../images/visa_countries/flag_icon/19.png);
 }
 
 .visa__countries-item20 a:before {
-    background-image: url(../images/visa_countries/flag_icon/20.png);
+	background-image: url(../images/visa_countries/flag_icon/20.png);
 }
 
 .visa__countries-item21 a:before {
-    background-image: url(../images/visa_countries/flag_icon/21.png);
+	background-image: url(../images/visa_countries/flag_icon/21.png);
 }
 
 .visa__countries-item22 a:before {
-    background-image: url(../images/visa_countries/flag_icon/22.png);
+	background-image: url(../images/visa_countries/flag_icon/22.png);
 }
 
 .visa__countries-item23 a:before {
-    background-image: url(../images/visa_countries/flag_icon/23.png);
+	background-image: url(../images/visa_countries/flag_icon/23.png);
 }
 
 .visa__countries-item24 a:before {
-    background-image: url(../images/visa_countries/flag_icon/24.png);
+	background-image: url(../images/visa_countries/flag_icon/24.png);
 }
 
 .visa__countries-item25 a:before {
-    background-image: url(../images/visa_countries/flag_icon/25.png);
+	background-image: url(../images/visa_countries/flag_icon/25.png);
 }
 
 .visa__countries-item26 a:before {
-    background-image: url(../images/visa_countries/flag_icon/26.png);
+	background-image: url(../images/visa_countries/flag_icon/26.png);
 }
 
 .visa__countries-item27 a:before {
-    background-image: url(../images/visa_countries/flag_icon/27.png);
+	background-image: url(../images/visa_countries/flag_icon/27.png);
 }
 
 .visa__countries-item28 a:before {
-    background-image: url(../images/visa_countries/flag_icon/28.png);
+	background-image: url(../images/visa_countries/flag_icon/28.png);
 }
 
 .visa__countries-item29 a:before {
-    background-image: url(../images/visa_countries/flag_icon/29.png);
+	background-image: url(../images/visa_countries/flag_icon/29.png);
 }
 
 .visa__countries-item30 a:before {
-    background-image: url(../images/visa_countries/flag_icon/30.png);
+	background-image: url(../images/visa_countries/flag_icon/30.png);
 }
 
 .visa__countries-item31 a:before {
-    background-image: url(../images/visa_countries/flag_icon/31.png);
+	background-image: url(../images/visa_countries/flag_icon/31.png);
 }
 
 .visa__countries-item32 a:before {
-    background-image: url(../images/visa_countries/flag_icon/32.png);
+	background-image: url(../images/visa_countries/flag_icon/32.png);
 }
 
 .visa__countries-item33 a:before {
-    background-image: url(../images/visa_countries/flag_icon/33.png);
+	background-image: url(../images/visa_countries/flag_icon/33.png);
 }
 
 .visa__countries-item34 a:before {
-    background-image: url(../images/visa_countries/flag_icon/34.png);
+	background-image: url(../images/visa_countries/flag_icon/34.png);
 }
 
 .visa__countries-item35 a:before {
-    background-image: url(../images/visa_countries/flag_icon/35.png);
+	background-image: url(../images/visa_countries/flag_icon/35.png);
 }
 
 .visa__countries-item36 a:before {
-    background-image: url(../images/visa_countries/flag_icon/36.png);
+	background-image: url(../images/visa_countries/flag_icon/36.png);
 }
 
 .visa__countries-item37 a:before {
-    background-image: url(../images/visa_countries/flag_icon/37.png);
+	background-image: url(../images/visa_countries/flag_icon/37.png);
 }
 
 .visa__countries-item38 a:before {
-    background-image: url(../images/visa_countries/flag_icon/38.png);
+	background-image: url(../images/visa_countries/flag_icon/38.png);
 }
 
 .visa__counters-span-btn {
-    display: none;
+	display: none;
 }
 
 @media(max-width:640px) {
-    .popup__content {
-        max-width: 280px;
-    }
-
-    .popup__column {
-        padding: 30px 10px 25px;
-    }
-
-    .visa__countries__content {
-        max-width: 580px;
-    }
-
-    .popup__form {
-        margin: 0 15px;
-    }
-
-    .popup__form-input {
-        width: 230px;
-    }
-
-    .popup__form-textarea {
-        width: 230px;
-    }
-
-    .popup__form-link a {
-        width: 230px;
-    }
-
-    .popup__close {
-        top: 5px;
-        right: 5px;
-    }
+	.popup__content {
+		max-width: 280px;
+	}
+	.popup__column {
+		padding: 30px 10px 25px;
+	}
+	.visa__countries__content {
+		max-width: 580px;
+	}
+	.popup__form {
+		margin: 0 15px;
+	}
+	.popup__form-input {
+		width: 230px;
+	}
+	.popup__form-textarea {
+		width: 230px;
+	}
+	.popup__form-link a {
+		width: 230px;
+	}
+	.popup__close {
+		top: 5px;
+		right: 5px;
+	}
 }
 
 @media(max-width:540px) {
-    .popup__content {
-        max-width: 280px;
-    }
-
-    .popup__column {
-        padding: 30px 10px 25px;
-    }
-
-    .popup__form-input {
-        width: 230px;
-    }
-
-    .popup__form-link a {
-        width: 230px;
-    }
-
-    .popup__form-consent {
-        margin: 0;
-        max-width: 230px;
-    }
-
-    .popup__close {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-    }
-
-    .visa__countries-list1,
-    .visa__countries-list2 {
-        margin: 0;
-    }
-
-
-    .visa__counters-span.active {
-        display: block;
-    }
-
-    .visa__counters-span {
-        display: none;
-    }
-
-    .visa__countries-list1 span {
-        display: none;
-    }
-
-    .visa__countries-list1.active {
-        
-    }
-
-    .visa__counters-span-btn {
-        display: block;
-        background-color: #fff;
-        font-size: 13px;
-        line-height: 180%;
-        text-decoration: underline;
-        color: #8AC44B;
-        padding-bottom: 30px;
-    }
-
-    .visa__countries__column {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 25px;
-    }
-
-    .visa__countries-form {
-        display: flex;
-    }
-
-    .visa__countries-item {
-        display: flex;
-        width: 130px;
-        margin: 10px 15px 10px 0;
-    }
+	.popup__content {
+		max-width: 280px;
+	}
+	.popup__column {
+		padding: 30px 10px 25px;
+	}
+	.popup__form-input {
+		width: 230px;
+	}
+	.popup__form-link a {
+		width: 230px;
+	}
+	.popup__form-consent {
+		margin: 0;
+		max-width: 230px;
+	}
+	.popup__close {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+	.visa__countries-list1, .visa__countries-list2 {
+		margin: 0;
+	}
+	.visa__counters-span.active {
+		display: block;
+	}
+	.visa__counters-span {
+		display: none;
+	}
+	.visa__countries-list1 span {
+		display: none;
+	}
+	.visa__countries-list1.active {}
+	.visa__counters-span-btn {
+		display: block;
+		background-color: #fff;
+		font-size: 13px;
+		line-height: 180%;
+		text-decoration: underline;
+		color: #8AC44B;
+		padding-bottom: 30px;
+	}
+	.visa__countries__column {
+		display: flex;
+		flex-direction: column;
+		padding: 30px 25px;
+	}
+	.visa__countries-form {
+		display: flex;
+	}
+	.visa__countries-item {
+		display: flex;
+		width: 130px;
+		margin: 10px 15px 10px 0;
+	}
 }
