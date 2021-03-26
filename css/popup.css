@@ -120,7 +120,7 @@ input.popup__form-input::placeholder, .popup__form-textarea::placeholder {
 
 .popup__form-link {
 	display: flex;
-	margin: 10px 0;
+	margin: 10px 8px;
 }
 
 .popup__form-link input {

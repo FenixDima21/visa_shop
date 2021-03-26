@@ -2509,6 +2509,10 @@ input.discount__form-input::placeholder {
 		border-radius: 50%;
 		cursor: pointer;
 	}
+	
+	.documents_content {
+		justify-content: flex-start;
+	}
 }
 
 @media (max-width: 540px) {
