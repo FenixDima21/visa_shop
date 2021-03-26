@@ -8,7 +8,6 @@
 
 		document.querySelectorAll('.tabs__title-item, .tabs__content-item').forEach(el => el.classList.remove('active'))
 		e.target.classList.add('active')
-		// console.log(document.querySelector('.' + target))
 		document.querySelector('.' + target).classList.add('active')
 	}
 
